@@ -16,10 +16,8 @@ Básicamente, te permite tener un historial completo de tu proyecto, como si tuv
 ## ¿Cómo funciona Git?
 
 Cuando se usa Git, se crea algo llamado un repositorio, esta es una carpeta donde se guarda tu proyecto junto con su historial de cambios.  
-
 Se puede usar el repositorio solo en tu computadora (de forma local) o subirlo a internet (de forma remota) para compartirlo con otros usuarios.  
 Si se trabaja en equipo (con más personas), cada uno tiene su copia del proyecto y puede subir o bajar los cambios del resto.
-
 Algunos comandos básicos de Git son:
 
 - `git init`: crea un nuevo repositorio.  
@@ -34,7 +32,6 @@ Algunos comandos básicos de Git son:
 
 **GitHub** es una página web (ahora propiedad de Microsoft) que funciona junto con Git.  
 No es Git en sí, sino un lugar donde se pueden guardar tus repositorios online, para tenerlos respaldados y compartirlos más fácilmente.  
-
 Existen otras plataformas parecidas, como GitLab o Bitbucket, pero GitHub es la más conocida y usada.  
 
 Con GitHub se puede:
@@ -63,5 +60,5 @@ Con GitHub se puede:
 ## Conclusión
 
 Git es una herramienta súper práctica, te da control sobre tus proyectos, te salva cuando algo falla y hace que trabajar con otros sea mucho más fácil.  
-
 GitHub, por su parte, es el complemento perfecto: una plataforma que te permite subir tu trabajo, compartirlo y colaborar sin complicaciones.
+

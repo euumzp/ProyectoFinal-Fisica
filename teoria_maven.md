@@ -67,7 +67,7 @@ Proporciona plantillas predefinidas (arquetipos) para crear proyectos rápidamen
 
 ## ¿Cuándo usar Maven?
 
-### Casos de Uso Ideales ✅
+### Casos de Uso Ideales 
 
 1. **Proyectos Java Enterprise**
 2. **Aplicaciones con múltiples dependencias**
@@ -76,7 +76,7 @@ Proporciona plantillas predefinidas (arquetipos) para crear proyectos rápidamen
 5. **Proyectos que serán compartidos o open-source**
 6. **Entornos corporativos con repositorios privados**
 
-### Cuándo considerar alternativas ❌
+### Cuándo considerar alternativas 
 
 1. Proyectos muy simples con pocas dependencias
 2. Proyectos que requieren builds altamente personalizados
@@ -403,16 +403,17 @@ Usar `dependencyManagement` para controlar versiones:
 Maven es una herramienta poderosa que, cuando se usa correctamente, puede simplificar significativamente el desarrollo y mantenimiento de proyectos Java. Su enfoque basado en convenciones y su ecosistema maduro lo convierten en una excelente opción para la mayoría de proyectos empresariales.
 
 ### Resumen de Beneficios
-- ✅ **Estandarización** en estructura y procesos
-- ✅ **Automatización** de tareas repetitivas
-- ✅ **Gestión eficiente** de dependencias
-- ✅ **Integración** con ecosistema Java
-- ✅ **Extensibilidad** mediante plugins
-- ✅ **Documentación** automática
+- **Estandarización** en estructura y procesos
+- **Automatización** de tareas repetitivas
+- **Gestión eficiente** de dependencias
+- **Integración** con ecosistema Java
+- **Extensibilidad** mediante plugins
+- **Documentación** automática
 
 Aunque herramientas más modernas como Gradle han ganado popularidad, Maven sigue siendo ampliamente utilizado y es una habilidad valiosa para cualquier desarrollador Java. Su curva de aprendizaje inicial se ve compensada por la productividad ganada a largo plazo en proyectos mantenibles y bien estructurados.
 
 ### Recursos Adicionales
 - [Documentación Oficial de Maven](https://maven.apache.org/guides/)
 - [Maven Central Repository](https://search.maven.org/)
+
 - [Maven en 5 minutos](https://maven.apache.org/guides/getting-started/maven-in-five-minutes.html)

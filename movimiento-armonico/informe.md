@@ -10,28 +10,49 @@ Analizar experimentalmente el **Movimiento Armónico Simple** mediante datos de 
 ### Ecuaciones Fundamentales
 
 **Ley de Hooke:**
-$$ F = -k x $$
+$$
+F = -k x
+$$
 
 **Ecuación del MAS:**
-$$ m \ddot{x} + k x = 0 \quad \Rightarrow \quad \ddot{x} + \omega^2 x = 0 $$
+$
+m \ddot{x} + k x = 0 \quad \Rightarrow \quad \ddot{x} + \omega^2 x = 0
+$$
 
 **Frecuencia angular:**
-$$ \omega = \sqrt{\frac{k}{m}} $$
+$$
+\omega = \sqrt{\frac{k}{m}}
+$$
 
 **Solución de posición:**
-$$ x(t) = A \cos(\omega t + \varphi) $$
+$$
+x(t) = A \cos(\omega t + \varphi)
+$$
 
 **Velocidad:**
-$$ v(t) = -A \omega \sin(\omega t + \varphi) $$
+$$
+v(t) = -A \omega \sin(\omega t + \varphi)
+$$
 
 **Periodo:**
-$$ T = \frac{2\pi}{\omega} = 2\pi \sqrt{\frac{m}{k}} $$
+$$
+T = \frac{2\pi}{\omega} = 2\pi \sqrt{\frac{m}{k}}
+$$
 
 ### Energía en el MAS
-- **Energía cinética:** $ K = \frac{1}{2} m v^2 $
-- **Energía potencial:** $ U = \frac{1}{2} k x^2 $  
-- **Energía total:** $ E = \frac{1}{2} k A^2 $ (constante)
-
+- **Energía cinética:**
+$$
+K = \frac{1}{2} m v^2
+$$ 
+- **Energía potencial:**
+$$
+K = \frac{1}{2} m v^2
+$$
+- **Energía total:**
+$$
+K = \frac{1}{2} m v^2
+$$
+ 
 ---
 
 ## Metodología Experimental
@@ -175,5 +196,6 @@ Dado que T ≈ 2.000s para múltiples mediciones, el error sistemático afecta s
 4. **Relación masa-periodo:** Se observa la tendencia teórica $T \propto \sqrt{m}$, aunque la precisión está limitada por el algoritmo de estimación de periodo.
 
 5. **Herramienta computacional:** El programa desarrollado demostró ser efectivo para la visualización de datos, pero requiere mejoras en el algoritmo de cálculo de parámetros para mayor precisión.
+
 
 6. **Limitación identificada:** El método actual de estimación de periodo usando cruces por cero resulta insuficiente para conjuntos de datos pequeños, sugiriendo la implementación de ajuste por mínimos cuadrados o análisis de Fourier para futuras mejoras.

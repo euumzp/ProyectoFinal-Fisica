@@ -10,48 +10,56 @@ Analizar experimentalmente el **Movimiento Armónico Simple** mediante datos de 
 ### Ecuaciones Fundamentales
 
 **Ley de Hooke:**
-$$
-F = -k x
-$$
+<p align="center">
+  <img src="https://latex.codecogs.com/svg.image?F=-k&space;x&space;" alt="F = -kx"/>
+</p>
 
 **Ecuación del MAS:**
-$
-m \ddot{x} + k x = 0 \quad \Rightarrow \quad \ddot{x} + \omega^2 x = 0
-$$
+<p align="center">
+  <img src="https://latex.codecogs.com/svg.image?m\ddot{x}&plus;k&space;x=0\quad\Rightarrow\quad\ddot{x}&plus;\omega^2&space;x=0&space;" alt="m x¨ + kx = 0 ⇒ x¨ + ω²x = 0"/>
+</p>
+
 
 **Frecuencia angular:**
-$$
-\omega = \sqrt{\frac{k}{m}}
-$$
+<p align="center">
+  <img src="https://latex.codecogs.com/svg.image?\omega=\sqrt{\frac{k}{m}}" alt="ω = √(k/m)"/>
+</p>
+
 
 **Solución de posición:**
-$$
-x(t) = A \cos(\omega t + \varphi)
-$$
+<p align="center">
+  <img src="https://latex.codecogs.com/svg.image?x(t)=A\cos(\omega&space;t&plus;\varphi)" alt="x(t) = A cos(ωt + φ)"/>
+</p>
+
 
 **Velocidad:**
-$$
-v(t) = -A \omega \sin(\omega t + \varphi)
-$$
+<p align="center">
+  <img src="https://latex.codecogs.com/svg.image?v(t)=-A\omega\sin(\omega&space;t&plus;\varphi)" alt="v(t) = -A ω sin(ωt + φ)"/>
+</p>
+
 
 **Periodo:**
-$$
-T = \frac{2\pi}{\omega} = 2\pi \sqrt{\frac{m}{k}}
-$$
+<p align="center">
+  <img src="https://latex.codecogs.com/svg.image?T=\frac{2\pi}{\omega}=2\pi\sqrt{\frac{m}{k}}" alt="T = 2π/ω = 2π √(m/k)"/>
+</p>
+
 
 ### Energía en el MAS
 - **Energía cinética:**
-$$
-K = \frac{1}{2} m v^2
-$$ 
+<p align="center">
+  <img src="https://latex.codecogs.com/svg.image?K=\frac{1}{2}m&space;v^2&space;" alt="K = 1/2 m v²"/>
+</p>
+ 
 - **Energía potencial:**
-$$
-K = \frac{1}{2} m v^2
-$$
+<p align="center">
+  <img src="https://latex.codecogs.com/svg.image?U=\frac{1}{2}k&space;x^2&space;" alt="U = 1/2 k x²"/>
+</p>
+
 - **Energía total:**
-$$
-K = \frac{1}{2} m v^2
-$$
+<p align="center">
+  <img src="https://latex.codecogs.com/svg.image?E=\frac{1}{2}k&space;A^2&space;" alt="E = 1/2 k A²"/>
+</p>
+
  
 ---
 
@@ -152,16 +160,23 @@ public class MASAnalizer {
 - Tabla 6: 9.87 N/m
 
 **Constante elástica promedio:**
-$$ k_{promedio} = \frac{39.48 + 29.61 + 29.61 + 19.74 + 19.74 + 9.87}{6} = \frac{148.05}{6} = 24.68 \text{ N/m} $$
+<p align="center">
+  <img src="https://latex.codecogs.com/svg.image?k_{promedio}=\frac{39.48&plus;29.61&plus;29.61&plus;19.74&plus;19.74&plus;9.87}{6}=\frac{148.05}{6}=24.68\text{N/m}" alt="k_promedio = 24.68 N/m"/>
+</p>
 
 ### Cálculo del Periodo para Masa 9m
 
 Utilizando la constante elástica promedio:
 
-$$ T = 2\pi \sqrt{\frac{m}{k}} = 2\pi \sqrt{\frac{9m}{24.68}} $$
+<p align="center">
+  <img src="https://latex.codecogs.com/svg.image?T=2\pi\sqrt{\frac{m}{k}}=2\pi\sqrt{\frac{9m}{24.68}}" alt="T = 2π√(m/k) = 2π√(9m/24.68)"/>
+</p>
 
 Considerando m como unidad de masa de referencia:
-$$ T = 2\pi \sqrt{\frac{9}{24.68}} = 2\pi \sqrt{0.3647} = 2\pi \times 0.604 = 3.79 \text{ segundos} $$
+
+<p align="center">
+  <img src="https://latex.codecogs.com/svg.image?T=2\pi\sqrt{\frac{9}{24.68}}=2\pi\sqrt{0.3647}=2\pi\times&space;0.604=3.79\text{s}" alt="T = 2π√(9/24.68) = 2π√(0.3647) = 2π×0.604 = 3.79 s"/>
+</p>
 
 ---
 
@@ -176,12 +191,18 @@ $$ T = 2\pi \sqrt{\frac{9}{24.68}} = 2\pi \sqrt{0.3647} = 2\pi \times 0.604 = 3.
 6. **Algoritmo de estimación de periodo** - Uso de valor por defecto (T=2.000s) cuando no se detectan suficientes cruces por cero
 
 ### Propagación de Errores
+
 El error en la constante elástica se propaga desde las mediciones de posición y tiempo a través de la relación:
-$$ k = m \omega^2 = m \left(\frac{2\pi}{T}\right)^2 $$
+
+<p align="center">
+  <img src="https://latex.codecogs.com/svg.image?k=m\omega^2=m\left(\frac{2\pi}{T}\right)^2&space;" alt="k = mω² = m(2π/T)²"/>
+</p>
 
 **Error relativo en k:**
-$$ \frac{\Delta k}{k} \approx 2\frac{\Delta T}{T} $$
-Dado que T ≈ 2.000s para múltiples mediciones, el error sistemático afecta significativamente el cálculo de k.
+
+<p align="center">
+  <img src="https://latex.codecogs.com/svg.image?\frac{\Delta&space;k}{k}\approx&space;2\frac{\Delta&space;T}{T}" alt="Δk/k ≈ 2 ΔT/T"/>
+</p>
 
 ---
 
@@ -199,3 +220,4 @@ Dado que T ≈ 2.000s para múltiples mediciones, el error sistemático afecta s
 
 
 6. **Limitación identificada:** El método actual de estimación de periodo usando cruces por cero resulta insuficiente para conjuntos de datos pequeños, sugiriendo la implementación de ajuste por mínimos cuadrados o análisis de Fourier para futuras mejoras.
+

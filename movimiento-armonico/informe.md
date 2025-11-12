@@ -92,7 +92,7 @@ public class MASAnalizer {
 ## Resultados Experimentales
 
 ### Tabla 1 - Masa 4m
-![Gráfica Posición vs Tiempo - Masa 4m](/graficos/tabla1_posicion.jpg)
+![Gráfico Tabla 1](graficos/grafico_tabla1.png)
 
 **Parámetros calculados:**
 - Amplitud (A): 1.000 m
@@ -101,7 +101,7 @@ public class MASAnalizer {
 - Constante elástica (k): 39.48 N/m
 
 ### Tabla 2 - Masa 3m  
-![Gráfica Posición vs Tiempo - Masa 3m](/graficos/tabla2_posicion.jpg)
+![Gráfico Tabla 2](graficos/grafico_tabla2.png)
 
 **Parámetros calculados:**
 - Amplitud (A): 0.856 m
@@ -110,7 +110,7 @@ public class MASAnalizer {
 - Constante elástica (k): 36.54 N/m
 
 ### Tabla 3 - Masa 3m
-![Gráfica Posición vs Tiempo - Masa 3m](/graficos/tabla3_posicion.jpg)
+![Gráfico Tabla 3](graficos/grafico_tabla3.png)
 
 **Parámetros calculados:**
 - Amplitud (A): 1.986 m
@@ -119,7 +119,7 @@ public class MASAnalizer {
 - Constante elástica (k): 24.47 N/m
 
 ### Tabla 4 - Masa 2m
-![Gráfica Posición vs Tiempo - Masa 2m](/graficos/tabla4_posicion.jpg)
+![Gráfico Tabla 4](graficos/grafico_tabla4.png)
 
 **Parámetros calculados:**
 - Amplitud (A): 1.958 m
@@ -128,7 +128,7 @@ public class MASAnalizer {
 - Constante elástica (k): 30.84 N/m
 
 ### Tabla 5 - Masa 2m
-![Gráfica Posición vs Tiempo - Masa 2m](/graficos/tabla5_posicion.jpg)
+![Gráfico Tabla 5](graficos/grafico_tabla5.png)
 
 **Parámetros calculados:**
 - Amplitud (A): 2.000 m
@@ -137,7 +137,7 @@ public class MASAnalizer {
 - Constante elástica (k): 35.10 N/m
 
 ### Tabla 6 - Masa m
-![Gráfica Posición vs Tiempo - Masa m](/graficos/tabla6_posicion.jpg)
+![Gráfico Tabla 6](graficos/grafico_tabla6.png)
 
 **Parámetros calculados:**
 - Amplitud (A): 1.000 m

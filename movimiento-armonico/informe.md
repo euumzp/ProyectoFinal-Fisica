@@ -94,6 +94,10 @@ public class MASAnalizer {
 ### Tabla 1 - Masa 4m
 ![Gráfico Tabla 1](graficos/grafico_tabla1.png)
 
+**Descripción:**
+En la gráfica se puede ver cómo cambia la posición (línea roja) y la velocidad (línea azul) de la masa de 4m a lo largo del tiempo. Al principio la posición es máxima y va disminuyendo poco a poco, mientras que la velocidad empieza en cero y se vuelve negativa, mostrando que el objeto empieza a moverse hacia el otro extremo del resorte.
+Se nota que ambas curvas están relacionadas, pero con un pequeño desfase, tal como ocurre en el movimiento armónico simple. En general, el comportamiento es el esperado: una oscilación suave y periódica, con la velocidad aumentando cuando la posición se acerca al punto de equilibrio.
+
 **Parámetros calculados:**
 - Amplitud (A): 1.000 m
 - Periodo (T): 2.000 s
@@ -102,6 +106,10 @@ public class MASAnalizer {
 
 ### Tabla 2 - Masa 3m  
 ![Gráfico Tabla 2](graficos/grafico_tabla2.png)
+
+**Descripción:**
+En esta gráfica se muestra cómo varían la posición (línea roja) y la velocidad (línea azul) para la masa de 3m. Se nota que la posición disminuye de forma casi lineal al principio, mientras que la velocidad se hace más negativa hasta alcanzar un punto mínimo y luego empieza a subir otra vez.
+Esto refleja el momento en que la masa llega al extremo de su trayectoria y comienza a regresar, lo que es típico del movimiento armónico simple.
 
 **Parámetros calculados:**
 - Amplitud (A): 0.856 m
@@ -112,6 +120,10 @@ public class MASAnalizer {
 ### Tabla 3 - Masa 3m
 ![Gráfico Tabla 3](graficos/grafico_tabla3.png)
 
+**Descripción:**
+En esta gráfica se observa la posición (línea roja) y la velocidad (línea azul) correspondientes a la masa de 3m. Al inicio, la velocidad es alta y positiva, pero va disminuyendo con el tiempo hasta volverse negativa, mientras que la posición aumenta gradualmente hasta alcanzar un valor máximo y luego se mantiene casi constante.
+Esto muestra el punto en el que la masa llega al extremo de su oscilación: la posición se estabiliza momentáneamente y la velocidad pasa por cero antes de cambiar de dirección. En general, el comportamiento sigue el patrón esperado del movimiento armónico simple, mostrando cómo ambas magnitudes están desfasadas entre sí.
+
 **Parámetros calculados:**
 - Amplitud (A): 1.986 m
 - Periodo (T): 2.200 s
@@ -120,6 +132,12 @@ public class MASAnalizer {
 
 ### Tabla 4 - Masa 2m
 ![Gráfico Tabla 4](graficos/grafico_tabla4.png)
+
+**Descripción:**
+En esta gráfica se puede ver cómo cambian la posición y la velocidad de la masa con el tiempo.
+La línea roja muestra la posición: al inicio la masa está más alejada de su punto de equilibrio (aproximadamente a 4.5 m) y poco a poco se va acercando, pasando por el centro y moviéndose hacia el otro lado.
+La línea azul representa la velocidad. Al comienzo es casi cero, luego aumenta mientras la masa se mueve hacia el equilibrio y vuelve a disminuir cuando cambia de dirección.
+Se nota que cuando la posición es máxima, la velocidad es mínima, y viceversa, lo cual es típico del Movimiento Armónico Simple.
 
 **Parámetros calculados:**
 - Amplitud (A): 1.958 m
@@ -130,6 +148,13 @@ public class MASAnalizer {
 ### Tabla 5 - Masa 2m
 ![Gráfico Tabla 5](graficos/grafico_tabla5.png)
 
+**Descripción:**
+En esta gráfica se observan las variaciones de posición y velocidad de la masa a lo largo del tiempo.
+La línea roja representa la posición, que empieza cerca de los 2 metros y va disminuyendo de forma continua, mostrando cómo la masa se mueve hacia el punto de equilibrio y lo atraviesa.
+La línea azul muestra la velocidad: inicia en cero y luego se hace negativa, lo que indica que la masa se mueve en sentido contrario a su posición inicial. Alrededor de la mitad del tiempo alcanza su valor más bajo, lo que coincide con el momento en que la posición pasa por el equilibrio, y luego comienza a aumentar nuevamente.
+El comportamiento de ambas curvas refleja el Movimiento Armónico Simple, donde la posición y la velocidad están fuera de fase: cuando una alcanza su máximo, la otra se encuentra cerca de cero.
+En general, el gráfico muestra un movimiento periódico y regular, coherente con las leyes del MAS y con el periodo experimental medido para esta masa.
+
 **Parámetros calculados:**
 - Amplitud (A): 2.000 m
 - Periodo (T): 1.500 s
@@ -138,6 +163,13 @@ public class MASAnalizer {
 
 ### Tabla 6 - Masa m
 ![Gráfico Tabla 6](graficos/grafico_tabla6.png)
+
+**Descripción:**
+En esta gráfica se observa el movimiento de la masa más pequeña del experimento.
+La línea roja muestra la posición, que empieza cerca de –1 m y va aumentando con el tiempo, lo que indica que la masa se mueve desde un extremo negativo hacia el equilibrio y más allá de él.
+La línea azul representa la velocidad, que aumenta rápidamente al inicio, alcanza su valor máximo cerca de la mitad del tiempo y luego comienza a disminuir hasta llegar nuevamente a cero. Esto refleja cómo la masa acelera cuando pasa por el equilibrio y se desacelera al acercarse al punto máximo de desplazamiento.
+Se nota claramente que la velocidad y la posición están desfasadas, lo que es característico del Movimiento Armónico Simple.
+El movimiento es rápido y regular, con un periodo corto, lo que coincide con la teoría: al tener una masa menor, la oscilación ocurre más deprisa.
 
 **Parámetros calculados:**
 - Amplitud (A): 1.000 m
@@ -220,4 +252,5 @@ El error en la constante elástica se propaga desde las mediciones de posición 
 
 
 6. **Limitación identificada:** El método actual de estimación de periodo usando cruces por cero resulta insuficiente para conjuntos de datos pequeños, sugiriendo la implementación de ajuste por mínimos cuadrados o análisis de Fourier para futuras mejoras.
+
 

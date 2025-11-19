@@ -1,0 +1,7 @@
+com\labfisica\plots\MASAnalizer.class
+com\grupo\mmc\Linearizador.class
+com\grupo\GraficadorMAS.class
+com\labfisica\xydata\XYData.class
+com\grupo\mmc\MMCCalculator.class
+com\labfisica\io\CsvXYReader.class
+com\labfisica\plots\MASDataPlotter.class

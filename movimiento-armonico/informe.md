@@ -259,7 +259,7 @@ El error en la constante elástica se propaga desde las mediciones de posición 
 ### Persona 1: Linearización de Datos
 
 #### Tareas Completadas:
-1. **Linearización de datos** de todas las tablas usando:
+1. **Linearización de datos** de todaz las tablas usando:
    - X = x² (posición al cuadrado)
    - Y = v² (velocidad al cuadrado)
 

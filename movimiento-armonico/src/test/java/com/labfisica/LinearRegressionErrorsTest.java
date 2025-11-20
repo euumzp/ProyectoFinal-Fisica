@@ -89,4 +89,20 @@ public class LinearRegressionErrorsTest {
         assertEquals(5.0, result.A, 1e-10);  // Intercepto = 5
         assertEquals(0.0, result.B, 1e-10);  // Pendiente = 0
     }
+    @Test
+    public void testErrorCalculation() {
+        // Datos con ruido significativo
+        double[] x = {1.0, 2.0, 3.0, 4.0};
+        double[] y = {1.5, 1.8, 3.5, 3.9}; // Datos dispersos
+    
+        LinearRegressionErrors.RegressionResult result = 
+            LinearRegressionErrors.linearRegressionWithErrors(x, y);
+    
+        // Verificar que se calculan errores razonables
+        assertTrue(result.sigmaA > 0.01, "Error del intercepto debe ser significativo");
+        assertTrue(result.sigmaB > 0.01, "Error de la pendiente debe ser significativo");
+    
+        // Verificar que R² no es perfecto
+        assertTrue(result.rSquared < 0.99, "R² debe ser menor que 1 para datos ruidosos");
+}
 }

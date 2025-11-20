@@ -1,7 +1,16 @@
-com\labfisica\plots\MASAnalizer.class
+com\labfisica\regression\AnalizadorErrores.class
+com\persona3\AnalizadorErroresCoeficientes.class
 com\grupo\mmc\Linearizador.class
+com\labfisica\plots\RegressionPlotter.class
+com\labfisica\regression\LinearRegressionErrors.class
+com\labfisica\regression\Persona3Main.class
+com\labfisica\plots\AnalizadorCompleto.class
+com\labfisica\plots\MASAnalizer.class
 com\grupo\GraficadorMAS.class
 com\labfisica\xydata\XYData.class
+com\persona3\unique\Xyz123UniqueMainTest.class
 com\grupo\mmc\MMCCalculator.class
+com\grupo\mmc\CoeficienteB.class
 com\labfisica\io\CsvXYReader.class
 com\labfisica\plots\MASDataPlotter.class
+com\labfisica\regression\LinearRegressionErrors$RegressionResult.class

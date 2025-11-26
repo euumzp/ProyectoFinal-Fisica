@@ -12,7 +12,6 @@ public class CoeficienteB {
             sumXY += x[i] * y[i];
             sumX2 += x[i] * x[i];
         }
-
         return (n * sumXY - sumX * sumY)
              / (n * sumX2 - sumX * sumX);
     }

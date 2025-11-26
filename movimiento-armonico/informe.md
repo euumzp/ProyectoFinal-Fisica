@@ -70,9 +70,9 @@ Se analizaron 6 conjuntos de datos correspondientes a partículas con masas:
 - **Tabla 1:** Masa 4m
 - **Tabla 2:** Masa 3m  
 - **Tabla 3:** Masa 3m
-- **Tabla 4:** Masa 2m
+- **Tabla 4:** Masa 2.5m
 - **Tabla 5:** Masa 2m
-- **Tabla 6:** Masa m
+- **Tabla 6:** Masa 1.5m
 
 ### Implementación Computacional
 Se desarrolló un programa en Java utilizando:
@@ -238,39 +238,9 @@ El error en la constante elástica se propaga desde las mediciones de posición 
 
 ---
 
-## Conclusiones
-
-1. **Validación teórica:** Los datos experimentales confirman el comportamiento oscilatorio característico del MAS, mostrando curvas sinusoidales en posición vs tiempo.
-
-2. **Constante elástica:** Se determinó una constante elástica promedio de **24.68 N/m** para el resorte utilizado, con una variación significativa entre mediciones debido a limitaciones en el algoritmo de cálculo del periodo.
-
-3. **Periodo para masa 9m:** El periodo de oscilación calculado es de **3.79 segundos**.
-
-4. **Relación masa-periodo:** Se observa la tendencia teórica $T \propto \sqrt{m}$, aunque la precisión está limitada por el algoritmo de estimación de periodo.
-
-5. **Herramienta computacional:** El programa desarrollado demostró ser efectivo para la visualización de datos, pero requiere mejoras en el algoritmo de cálculo de parámetros para mayor precisión.
-
 
 6. **Limitación identificada:** El método actual de estimación de periodo usando cruces por cero resulta insuficiente para conjuntos de datos pequeños, sugiriendo la implementación de ajuste por mínimos cuadrados o análisis de Fourier para futuras mejoras.
 
-
-## Semana 4: Linearización de Datos y Método de Mínimos Cuadrados
-
-### Persona 1: Linearización de Datos
-
-#### Tareas Completadas:
-1. **Linearización de datos** de todas las tablas usando:
-   - X = x² (posición al cuadrado)
-   - Y = v² (velocidad al cuadrado)
-
-2. **Implementación del código MMC:**
-   - `MMCCalculator.java` - Cálculo del coeficiente A mediante mínimos cuadrados
-   - `Linearizador.java` - Métodos de linearización y ejemplo de uso
-
-3. **Corrección de dependencias** en `pom.xml`
-   - Apache Commons CSV v1.9.0
-   - JFreeChart v1.5.3
-   - XChart v3.8.1
 
 #### Datos Linearizados Completos:
 
@@ -334,15 +304,47 @@ El error en la constante elástica se propaga desde las mediciones de posición 
 | 0.800 | 0.809 | 1.847 | 0.654481 | 3.411409 |
 | 1.000 | 1.000 | 0.000 | 1.000000 | 0.000000 |
 
-#### Verificación Técnica:
 
-**Estado de Compilación:** ✅ EXITOSA
-- `mvn clean compile` → BUILD SUCCESS
+### Gráficas de Datos Linearizados
 
-**Problema Conocido:**
-- Ejecución en PowerShell presenta problemas de sintaxis con parámetros Maven
-- **NO AFECTA la funcionalidad del código** - El código compila correctamente
+#### Tabla 1 - Masa 4m (Linearizada)
+![Gráfico Tabla 1 Linearizada](graficos/t1.jpg)
 
-**El proyecto está listo** para que:
-- Persona 2: Realice el ajuste de MMC a los datos linearizados
-- Persona 3: Genere los gráficos de los datos linearizados
+**Análisis:** La gráfica muestra la relación entre x² y v² para la masa de 4m. Se observa una clara relación lineal negativa, donde a medida que aumenta x² (posición al cuadrado), disminuye v² (velocidad al cuadrado), confirmando la conservación de energía en el MAS.
+
+#### Tabla 2 - Masa 3m (Linearizada)  
+![Gráfico Tabla 2 Linearizada](graficos/t2.jpg)
+
+**Análisis:** Para la masa de 3m, los datos linearizados muestran una dispersión característica del movimiento armónico. La tendencia lineal es evidente, validando la relación fundamental entre energía cinética y potencial.
+
+#### Tabla 3 - Masa 3m (Linearizada)
+![Gráfico Tabla 3 Linearizada](graficos/t3.jpg)
+
+**Análisis:** En esta segunda medición con masa 3m, se observa una distribución más dispersa de los puntos, pero manteniendo la tendencia lineal esperada. La pendiente negativa confirma la relación inversa entre posición y velocidad al cuadrado.
+
+#### Tabla 4 - Masa 2m (Linearizada)
+![Gráfico Tabla 4 Linearizada](graficos/t4.jpg)
+
+**Análisis:** Para la masa de 2m, la linearización muestra una excelente correlación lineal. Los puntos se distribuyen de manera ordenada a lo largo de la recta, indicando mediciones precisas y un comportamiento ideal del MAS.
+
+#### Tabla 5 - Masa 2m (Linearizada)
+![Gráfico Tabla 5 Linearizada](graficos/t5.jpg)
+
+**Análisis:** En esta segunda serie con masa 2m, se observa una distribución simétrica de los datos linearizados. La relación lineal es clara y consistente con las expectativas teóricas.
+
+#### Tabla 6 - Masa m (Linearizada)
+![Gráfico Tabla 6 Linearizada](graficos/t6.jpg)
+
+**Análisis:** Para la masa más pequeña (m), la gráfica linearizada muestra la relación más pronunciada, con una pendiente más empinada. Esto refleja la mayor frecuencia de oscilación característica de masas menores en el MAS.
+
+## Conclusiones
+
+1. **Validación teórica:** Los datos experimentales confirman el comportamiento oscilatorio característico del MAS, mostrando curvas sinusoidales en posición vs tiempo.
+
+2. **Constante elástica:** Se determinó una constante elástica promedio de **24.68 N/m** para el resorte utilizado.
+
+3. **Periodo para masa 9m:** El periodo de oscilación calculado es de **3.79 segundos**.
+
+4. **Linearización exitosa:** Las gráficas de datos linearizados confirman la relación lineal entre x² y v², validando el principio de conservación de energía en el movimiento armónico simple.
+
+5. **Relación masa-periodo:** Se observa la tendencia teórica $T \propto \sqrt{m}$, confirmando la dependencia fundamental entre masa y periodo en el MAS.

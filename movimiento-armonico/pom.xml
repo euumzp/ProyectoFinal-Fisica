@@ -49,6 +49,12 @@
             <artifactId>xchart</artifactId>
             <version>3.8.1</version>
         </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+             <artifactId>junit-jupiter</artifactId>
+             <version>5.9.2</version>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
 
     <build>
@@ -69,14 +75,13 @@
                 <artifactId>exec-maven-plugin</artifactId>
                 <version>3.1.0</version>
                 <configuration>
-                    <mainClass>com.grupo.GraficadorMAS</mainClass>
+                    <!-- <mainClass>com.grupo.GraficadorMAS</mainClass> -->
                 </configuration>
             </plugin>
-
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
-                <version>3.0.0-M7</version>
+                <version>3.0.0-M9</version>
             </plugin>
 
         </plugins>

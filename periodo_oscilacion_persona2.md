@@ -17,9 +17,9 @@ Los valores utilizados provienen del trabajo de la **Persona 1 (Semana 4)**.
 
 ---
 
-## **2. Fundamento Teórico**
+## 2. Fundamento Teórico
 
-El sistema masa–resorte ideal sigue el comportamiento del **Movimiento Armónico Simple (MAS)**:
+El sistema masa–resorte ideal sigue el comportamiento del Movimiento Armónico Simple (MAS):
 
 \[
 x(t) = A \cos(\omega t + \varphi)
@@ -39,22 +39,22 @@ T = \frac{2\pi}{\omega} = 2\pi \sqrt{\frac{m}{k}}
 
 Este resultado indica:
 
-- El período **crece** con la raíz de la masa.
-- El período **disminuye** cuando la constante del resorte aumenta.
+- El período crece con la raíz de la masa.  
+- El período disminuye cuando la constante del resorte aumenta.
 
 ---
 
-## **3. Datos Utilizados**
+## 3. Datos Utilizados
 
 Según el informe de la Semana 4:
 
-- **Constante elástica del resorte:**
+Constante elástica del resorte:
 
 \[
 k = 24.68\ \text{N/m}
 \]
 
-- **Error experimental:**
+Error experimental:
 
 \[
 \Delta k = 0.20\ \text{N/m}
@@ -74,7 +74,7 @@ m' = 9m = 9\ \text{kg}
 
 ---
 
-## **4. Cálculo del Período para Masa 9m**
+## 4. Cálculo del Período para Masa 9m
 
 Aplicamos:
 
@@ -104,7 +104,7 @@ Este valor coincide con el utilizado posteriormente para las gráficas elaborada
 
 ---
 
-## **5. Propagación de Error**
+## 5. Propagación de Error
 
 Partimos de:
 
@@ -112,7 +112,7 @@ Partimos de:
 T = 2\pi\sqrt{\frac{m'}{k}}
 \]
 
-El error depende sólo de **k**, pues m' es exacta.
+El error depende sólo de \( k \), pues \( m' \) es exacta.
 
 \[
 \Delta T = \left| \frac{\partial T}{\partial k} \right| \Delta k
@@ -140,7 +140,7 @@ Sustituyendo:
 
 ---
 
-## **6. Resultado Final**
+## 6. Resultado Final
 
 \[
 \boxed{T = 3.79 \pm 0.02\ \text{s}}

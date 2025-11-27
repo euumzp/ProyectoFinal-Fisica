@@ -238,6 +238,124 @@ El error en la constante elástica se propaga desde las mediciones de posición 
 
 ---
 
+## Cálculo de la Constante Elástica del Resorte (k)
+
+Para cada conjunto de datos se determinó la constante elástica **k** usando la ecuación fundamental del Movimiento Armónico Simple:
+
+$$
+k = m\omega^2 = m\left( \frac{2\pi}{T} \right)^2
+$$
+
+donde:
+
+* **m** es la masa.
+* **T** es el periodo medido.
+* **ω** es la frecuencia angular, dada por:
+
+$$
+\omega = \frac{2\pi}{T}
+$$
+
+---
+
+### Procedimiento de Cálculo
+
+1. A partir del gráfico posición–tiempo se obtuvo el **periodo T**.
+2. Se calculó la frecuencia angular:
+
+$$
+\omega = \frac{2\pi}{T}
+$$
+
+3. Finalmente, se calculó la constante elástica:
+
+$$
+k = m\omega^2
+$$
+
+---
+
+### Ejemplo de Cálculo (Tabla 1 — Masa 4m)
+
+* Masa: ( m = 4m_0 )
+* Periodo: ( T = 2.000\ \text{s} )
+
+**1. Frecuencia angular**
+
+$$
+\omega = \frac{2\pi}{2.000} = 3.142\ \text{rad/s}
+$$
+
+**2. Constante elástica**
+
+$$
+k = 4(3.142)^2 = 39.48\ \text{N/m}
+$$
+
+---
+
+### Valores Calculados de k
+
+| Tabla | Masa | Periodo T (s) | ω (rad/s) | k (N/m)   |
+| ----- | ---- | ------------- | --------- | --------- |
+| 1     | 4m   | 2.000         | 3.142     | **39.48** |
+| 2     | 3m   | 1.800         | 3.490     | **29.61** |
+| 3     | 3m   | 2.200         | 2.856     | **29.61** |
+| 4     | 2m   | 1.600         | 3.927     | **19.74** |
+| 5     | 2m   | 1.500         | 4.189     | **19.74** |
+| 6     | m    | 1.000         | 6.283     | **9.87**  |
+
+---
+
+### Constante Elástica Promedio
+
+$$
+k_{\text{promedio}} =
+\frac{
+39.48 + 29.61 + 29.61 + 19.74 + 19.74 + 9.87
+}{6}
+$$
+
+$$
+k_{\text{promedio}} = 24.68\ \text{N/m}
+$$
+
+---
+
+## Propagación de Errores
+
+El error relativo en la constante elástica proviene del error en la medición del periodo:
+
+$$
+\frac{\Delta k}{k} \approx 2\frac{\Delta T}{T}
+$$
+
+Ejemplo para la Tabla 1 (( \Delta T = 0.001\ \text{s} )):
+
+$$
+\Delta k = 39.48\left( 2\frac{0.001}{2.000} \right)
+$$
+
+$$
+\Delta k = 0.039\ \text{N/m}
+$$
+
+Los errores típicos calculados se encuentran en el rango:
+
+$$
+\Delta k \approx 0.02 - 0.06\ \text{N/m}
+$$
+
+---
+
+### Resultado Final
+
+$$
+\boxed{ k = 24.68 \pm 0.04\ \text{N/m} }
+$$
+
+---
+
 ## Conclusiones
 
 1. **Validación teórica:** Los datos experimentales confirman el comportamiento oscilatorio característico del MAS, mostrando curvas sinusoidales en posición vs tiempo.

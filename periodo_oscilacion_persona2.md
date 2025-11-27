@@ -1,5 +1,4 @@
-# Informe Semana 5 – Persona 2  
-## Cálculo del Período de Oscilación para Masa 9m
+# Cálculo del Período de Oscilación para Masa 9m
 
 ---
 

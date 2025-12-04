@@ -348,3 +348,34 @@ El error en la constante elástica se propaga desde las mediciones de posición 
 4. **Linearización exitosa:** Las gráficas de datos linearizados confirman la relación lineal entre x² y v², validando el principio de conservación de energía en el movimiento armónico simple.
 
 5. **Relación masa-periodo:** Se observa la tendencia teórica $T \propto \sqrt{m}$, confirmando la dependencia fundamental entre masa y periodo en el MAS.
+
+## Recomendaciones
+
+- **Mantener un flujo de trabajo colaborativo claro.**  
+  Utilizar ramas por integrante y ramas por funcionalidad; evitar trabajar directamente en `main` para reducir conflictos.
+
+- **Usar mensajes de commit descriptivos y consistentes.**  
+  Registrar claramente qué se modificó (gráficas, cálculos, tablas, análisis, etc.) para facilitar el seguimiento del progreso y detectar errores.
+
+- **Controlar versiones del código y del informe.**  
+  Crear *tags* en puntos clave del proyecto (versión preliminar, versión revisada, versión final), lo cual permite retroceder sin perder trabajo.
+
+- **Mantener un README organizado.**  
+  Documentar cómo ejecutar los scripts, la estructura de carpetas, las librerías utilizadas y la ubicación de los datos experimentales.
+
+- **Separar datos crudos y procesados.**  
+  Subir al repositorio los archivos originales sin modificar y mantener otra carpeta para datos limpios o procesados. Esto mejora la reproducibilidad y preserva la información original.
+
+- **Usar issues y pull requests para coordinar cambios.**  
+  Los *issues* sirven para registrar problemas o tareas; los *pull requests* permiten revisar y aprobar modificaciones antes de integrarlas a `main`.
+
+- **Realizar commits pequeños y frecuentes.**  
+  Esto reduce conflictos, facilita el seguimiento del progreso y permite identificar rápidamente el origen de un error.
+
+- **Configurar adecuadamente el archivo `.gitignore`.**  
+  Evitar subir archivos pesados o temporales (por ejemplo, `*.class`, `*.cache`, carpetas de compilación) que no aportan al proyecto.
+
+- **Respaldar cada sesión de trabajo.**  
+  Al finalizar cada día, subir los cambios al repositorio remoto para mantener sincronizados a todos los integrantes y evitar pérdida de información.
+
+

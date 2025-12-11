@@ -11,10 +11,9 @@ public class GraficadorMAS_9m {
         System.out.println("=== GRÁFICAS MOVIMIENTO ARMÓNICO - MASA 9m ===");
         System.out.println("Basado en resultados del informe Semana 4");
         
-        // VALORES DIRECTAMENTE DEL INFORME SEMANA 4
-        double periodo = 3.79; // Periodo para masa 9m
-        double amplitud = 2.0; // Amplitud representativa
-        double k_promedio = 24.68; // Constante elástica promedio
+        double periodo = 3.79;
+        double amplitud = 2.0;
+        double k_promedio = 24.68;
         
         System.out.println("Parámetros utilizados:");
         System.out.printf(" - Periodo (T): %.2f s\n", periodo);
@@ -24,8 +23,8 @@ public class GraficadorMAS_9m {
         
         generarGraficas(periodo, amplitud);
         
-        System.out.println("\n✅ Código ejecutado exitosamente");
-        System.out.println("📊 Gráficas generadas:");
+        System.out.println("\nCódigo ejecutado exitosamente");
+        System.out.println("Gráficas generadas:");
         System.out.println("   - posicion_masa9m.png");
         System.out.println("   - velocidad_masa9m.png");
         System.out.println("   - aceleracion_masa9m.png");
@@ -35,10 +34,9 @@ public class GraficadorMAS_9m {
     public static void generarGraficas(double periodo, double amplitud) {
         // Configuración
         double omega = 2 * Math.PI / periodo;
-        double tiempoTotal = 2 * periodo; // Mostrar 2 periodos completos
+        double tiempoTotal = 2 * periodo;
         int puntos = 400;
         
-        // Generar datos
         List<Double> tiempos = new ArrayList<>();
         List<Double> posiciones = new ArrayList<>();
         List<Double> velocidades = new ArrayList<>();
@@ -56,7 +54,6 @@ public class GraficadorMAS_9m {
             aceleraciones.add(a);
         }
         
-        // Crear gráficas
         crearGraficaPosicion(tiempos, posiciones, periodo);
         crearGraficaVelocidad(tiempos, velocidades, periodo);
         crearGraficaAceleracion(tiempos, aceleraciones, periodo);
@@ -78,7 +75,7 @@ public class GraficadorMAS_9m {
         
         try {
             BitmapEncoder.saveBitmap(chart, "posicion_masa9m.png", BitmapFormat.PNG);
-            System.out.println("✅ Gráfica de posición generada: posicion_masa9m.png");
+            System.out.println("Gráfica de posición generada: posicion_masa9m.png");
         } catch (IOException e) {
             System.err.println("Error guardando gráfica de posición: " + e.getMessage());
         }
@@ -99,7 +96,7 @@ public class GraficadorMAS_9m {
         
         try {
             BitmapEncoder.saveBitmap(chart, "velocidad_masa9m.png", BitmapFormat.PNG);
-            System.out.println("✅ Gráfica de velocidad generada: velocidad_masa9m.png");
+            System.out.println("Gráfica de velocidad generada: velocidad_masa9m.png");
         } catch (IOException e) {
             System.err.println("Error guardando gráfica de velocidad: " + e.getMessage());
         }
@@ -120,7 +117,7 @@ public class GraficadorMAS_9m {
         
         try {
             BitmapEncoder.saveBitmap(chart, "aceleracion_masa9m.png", BitmapFormat.PNG);
-            System.out.println("✅ Gráfica de aceleración generada: aceleracion_masa9m.png");
+            System.out.println("Gráfica de aceleración generada: aceleracion_masa9m.png");
         } catch (IOException e) {
             System.err.println("Error guardando gráfica de aceleración: " + e.getMessage());
         }
@@ -145,7 +142,7 @@ public class GraficadorMAS_9m {
         
         try {
             BitmapEncoder.saveBitmap(chart, "movimiento_completo_masa9m.png", BitmapFormat.PNG);
-            System.out.println("✅ Gráfica combinada generada: movimiento_completo_masa9m.png");
+            System.out.println("Gráfica combinada generada: movimiento_completo_masa9m.png");
         } catch (IOException e) {
             System.err.println("Error guardando gráfica combinada: " + e.getMessage());
         }
